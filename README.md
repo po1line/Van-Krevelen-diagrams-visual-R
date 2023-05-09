@@ -15,7 +15,7 @@ To test functions and to understand how to apply it to the data, a test dataset 
 
 
 |    | Column             | Non-Null Count | Dtype  |
-|--- | ------              --------------- | -----  |
+|--- | ------             | ---------------| -----  |
 | 0  | file_id            | 9146 non-null  | object |
 | 1  | mz                 | 9146 non-null  | float64|
 | 2  | i_magnitude        | 9146 non-null  | int64  |
