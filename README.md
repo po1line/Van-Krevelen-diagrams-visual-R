@@ -55,7 +55,8 @@ To test functions and to understand how to apply it to the data, a test dataset 
 * ``ai``, ``ai_mod`` – aromaticity indices calculated according to the following equations ([Zherebker et al., 2022](https://pubs.acs.org/action/showCitFormats?doi=10.1021/acs.est.1c04575&ref=pdf)):
 
 ${AI} = \frac{1+C-O-S-0.5N-0.5H}{C-O-N-S} $
-${AI_mod} = \frac{1+C-(СООН)_y-0.5N-0.5H}{C-(СООН)_y-N-S} $
+
+${AI_{mod}} = \frac{1+C-(СООН)_y-0.5N-0.5H}{C-(СООН)_y-N-S} $
 
 * ``ai_category`` and ``ai_mod_category`` – categorisation of aromaticity indices according to the rules
 
