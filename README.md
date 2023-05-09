@@ -1,9 +1,9 @@
 # Van-Krevelen-diagrams-R
 ## General description
-Here is the plot for nice visualisation of Van Krevelen diagrams to visualise massspectrometry data of natural organic matter (NOM) analysis.
-Van Krevelen diagrams are used to characterise individual components of complex mixtures, NOM including. In it's classic variant it is a plot of atomic O/C versus atomic H/C from elemental analysis.
+Here is the plot for a nice visualisation of Van Krevelen diagrams to visualise mass spectrometry data of natural organic matter (NOM) analysis.
+Van Krevelen diagrams are used to characterise individual components of complex mixtures, NOM including. In its classic variant, it is a plot of atomic O/C versus atomic H/C from elemental analysis.
 
-In this repo you can find two plotting functions for both continous and discrete values, and the function for plotting the density of diagram saturtion by molecules that can be used for the following assigning to precursor groups. 
+In this repo, you can find two plotting functions for both continuous and discrete values and the function for plotting the density of diagram saturation by molecules that can be used for the following assigning to precursor groups. 
 
 
 ## The data
@@ -67,15 +67,15 @@ ${AI_{mod}} = \frac{1+C-(СООН)_y-0.5N-0.5H}{C-(СООН)_y-N-S} $
 
 ### Functions
 
-1) plotting functions for continous and discrete values contains arguments:
-* ``data`` – your masspectrometry data, 
+1) plotting functions for continuous and discrete values contains arguments:
+* ``data`` – your mass spectrometry data, 
 * ``x`` – O/C ratio, 
 * ``y`` – H/C ratio, 
-* ``color`` – any target characteristic you choose for third dimension to visualise.
+* ``color`` – any target characteristic you choose for the third dimension to visualise.
 
 2) plotting function for density mapping contains only ``data``, ``x``, ``y`` parameters, described above.
 
-You can use functions to one sample dataset, and to multisample long data, specifying sample names in the column ``name`` and addind facet_grid option to the function.
+You can use functions to one sample dataset and to multisample long data, specifying sample names in the column ``name`` and adding ``facet_grid`` option to the function.
 
 ### Visual examples
 
