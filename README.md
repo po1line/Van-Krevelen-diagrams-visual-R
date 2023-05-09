@@ -8,11 +8,6 @@ In repo you can find two plotting functions for both continous and discrete valu
 
 ## The data
 To test functions and to understand how to apply it to the data, a test dataset is included. 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
 
 |    | Column             | Non-Null Count | Dtype  |
 |--- | ------             | ---------------| -----  |
@@ -50,3 +45,20 @@ To test functions and to understand how to apply it to the data, a test dataset 
 | 31 | ai_mod_category    | 9146 non-null  | object |
 | 32 | form               | 9146 non-null  | object |
 | 33 | name               | 9146 non-null  | object |
+
+### Main columns
+* ``file_id``, ``name`` – refers to the names of samples in test-data
+* ``c``, ``h``, ``n``, ``o``, ``p``, ``s`` - amount of atoms in molecule of individual component; ``oc``, ``hc``, ``nc``, ``sc`` – ratios of number of atoms in molecule;
+* ``mf`` - molecular formula of molecule
+* ``n_occurrence`` – frequency of molecule occurrence
+* ``form`` – simple formula of molecule
+* ``ai``, ``ai_mod`` – aromaticity indices calculated according to the following equations ([Zherebker et al., 2022](https://pubs.acs.org/action/showCitFormats?doi=10.1021/acs.est.1c04575&ref=pdf)):
+
+${AI} = \frac{1+C-O-S-0.5N-0.5H}{C-O-N-S} $
+${AI_mod} = \frac{1+C-(СООН)_y-0.5N-0.5H}{C-(СООН)_y-N-S} $
+
+* ``ai_category`` and ``ai_mod_category`` – categorisation of aromaticity indices according to the rules
+
+* \>= 0.5 and < 0.67 – aromatic structures
+* \> 0.67 – condensed structures
+* < 0.5 – other structures
