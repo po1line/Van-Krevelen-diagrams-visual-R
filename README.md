@@ -75,7 +75,7 @@ ${AI_{mod}} = \frac{1+C-(СООН)_y-0.5N-0.5H}{C-(СООН)_y-N-S} $
 
 2) plotting function for density mapping contains only ``data``, ``x``, ``y`` parameters, described above.
 
-You can use functions to one sample dataset, and to multisample long data, specifying sample names in the column ``name``.
+You can use functions to one sample dataset, and to multisample long data, specifying sample names in the column ``name`` and addind facet_grid option to the function.
 
 ### Visual examples
 
