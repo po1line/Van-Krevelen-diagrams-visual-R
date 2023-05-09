@@ -3,7 +3,7 @@
 Here is the plot for nice visualisation of Van Krevelen diagrams to visualise massspectrometry data of natural organic matter (NOM) analysis.
 Van Krevelen diagrams are used to characterise individual components of complex mixtures, NOM including. In it's classic variant it is a plot of atomic O/C versus atomic H/C from elemental analysis.
 
-In repo you can find two plotting functions for both continous and discrete values, and the function for plotting the density of diagram saturtion by molecules. 
+In this repo you can find two plotting functions for both continous and discrete values, and the function for plotting the density of diagram saturtion by molecules that can be used for the following assigning to precursor groups. 
 
 
 ## The data
@@ -75,7 +75,7 @@ ${AI_{mod}} = \frac{1+C-(СООН)_y-0.5N-0.5H}{C-(СООН)_y-N-S} $
 
 2) plotting function for density mapping contains only ``data``, ``x``, ``y`` parameters, described above.
 
-You can use functions to one sample dataset, and to multisample lond data, specifying sample names in the column ``name``.
+You can use functions to one sample dataset, and to multisample long data, specifying sample names in the column ``name``.
 
 ### Visual examples
 
