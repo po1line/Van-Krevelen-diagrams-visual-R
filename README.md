@@ -49,9 +49,10 @@ To test functions and to understand how to apply it to the data, a test dataset 
 ### Main columns
 * ``file_id``, ``name`` – refers to the names of samples in test-data
 * ``c``, ``h``, ``n``, ``o``, ``p``, ``s`` - amount of atoms in molecule of individual component; ``oc``, ``hc``, ``nc``, ``sc`` – ratios of number of atoms in molecule;
-* ``mf`` - molecular formula of molecule
-* ``n_occurrence`` – frequency of molecule occurrence
-* ``form`` – simple formula of molecule
+* ``m`` – molecular mass;
+* ``mf`` - molecular formula of molecule;
+* ``n_occurrence`` – frequency of molecule occurrence;
+* ``form`` – simple formula of molecule;
 * ``ai``, ``ai_mod`` – aromaticity indices calculated according to the following equations ([Zherebker et al., 2022](https://pubs.acs.org/action/showCitFormats?doi=10.1021/acs.est.1c04575&ref=pdf)):
 
 ${AI} = \frac{1+C-O-S-0.5N-0.5H}{C-O-N-S} $
