@@ -60,6 +60,27 @@ ${AI_{mod}} = \frac{1+C-(СООН)_y-0.5N-0.5H}{C-(СООН)_y-N-S} $
 
 * ``ai_category`` and ``ai_mod_category`` – categorisation of aromaticity indices according to the rules
 
-* \>= 0.5 and < 0.67 – aromatic structures
-* \> 0.67 – condensed structures
-* < 0.5 – other structures
+ - \>= 0.5 and < 0.67 – aromatic structures
+ -  \> 0.67 – condensed structures
+ -   < 0.5 – other structures
+
+### Functions
+
+1) plotting functions for continous and discrete values contains arguments:
+* ``data`` – your masspectrometry data, 
+* ``x`` – O/C ratio, 
+* ``y`` – H/C ratio, 
+* ``color`` – any target characteristic you choose for third dimension to visualise.
+
+2) plotting function for density mapping contains only ``data``, ``x``, ``y`` parameters, described above.
+
+You can use functions to one sample dataset, and to multisample lond data, specifying sample names in the column ``name``.
+
+### Visual examples
+
+![plot](atl_icr_1.png)
+
+![plot](atl_icr_2_mod.png)
+
+
+
